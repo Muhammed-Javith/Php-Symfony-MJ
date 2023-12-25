@@ -17,6 +17,7 @@ first project - FstPrjCrUsComposer
 		http://127.0.0.1:8000/  (ouput:hello)
 		http://127.0.0.1:8000/hello (output:welcome)
 		http://127.0.0.1:8000/hello/javith (output: hello javith)
+  
 second project:  - SecPrjCrUsCmd
 	1.install symfony cli using scoop
 	2.run following command to create project.
@@ -33,6 +34,8 @@ second project:  - SecPrjCrUsCmd
 		   when you run php bin/console make:controller  it will ask name then controller will be created.
 	4.start server and go and see the output.
 			routes.yaml not changed 
+
+   
 Third project: - SymControllerandRouter
 	1.run following command to create project.
 		symfony new #prjname or
@@ -48,6 +51,9 @@ Third project: - SymControllerandRouter
 		   when you run php bin/console make:controller  it will ask name then controller will be created.
 	3.start server and go and see the output.
 			routes.yaml not changed 
+
+
+   
 Fourth project: - SymRouteParam
 	1.run following command to create project.
 		symfony new SymRouteParam 
@@ -56,6 +62,8 @@ Fourth project: - SymRouteParam
 			composer require symfony/maker-bundle --dev or
 			composer require maker
 	3.symfony console debug:router will shows router in your project.
+
+ 
 fith Project : Twig 
 	1.run following command to create project.
 		symfony new Symtwig
@@ -72,6 +80,8 @@ fith Project : Twig
 			  -> add the following line:
 				"emmet.includeLanguages": {"twig" : "HTML"},
 		  v 	2.add code and run and check.
+
+    
 sixth project: twig layout
 	1.run following command to create project.
 		symfony new Symtwiglayout
@@ -83,6 +93,8 @@ sixth project: twig layout
 			composer require twig
 	4.under templates create index.html.twig
 	5.global variables given in twig.yaml
+
+
 seventhproject: orm with doctrine
 how to create database?
  orm - doctrine
@@ -106,6 +118,8 @@ how to create database?
 	- again create movie entity and add actors property and give ManyToMany while asking datatype and give className
 	- to prepare migration script - symfony console make:migration
 	- to push(migrate) in db - symfony console doctrine:migrations:migrate
+
+ 
 eight project: data fixtures
 - data fixtures:
 	- to load predefined data in database we use this data fixtures.
@@ -113,8 +127,13 @@ eight project: data fixtures
 	now data fixtures folder data will be created.
 	-symfony console doctrine:fixtures:load
 	- now you will see the datafixtures and use it for u r project use.
+
+   
 9th project: entity repository
 	- see the code
+
+
+ 
 10th project: asset
  	- run composer require symfony/webpack-encore-bundle
 	- now asset folder created and within that yiu can see the style files and js files.
@@ -123,6 +142,8 @@ eight project: data fixtures
 	- if needed to start server - npm run watch
 	- run composer require symfony/asset
 	- add our style sheet in base.html.twig
+
+ 
 11.application form
 	1.php bin/console make:controller
 
