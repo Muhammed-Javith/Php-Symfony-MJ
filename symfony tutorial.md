@@ -1,7 +1,11 @@
 symfony working procedure:
+
 first project - FstPrjCrUsComposer
+
 	1.download xampp or php and start server
+ 
 	2.do composer install 
+ 
 	3.run following command to  create project
 		composer create-project symfony/skeleton #prj_name
 	4.now project created and to start symfonyserver run the following command
