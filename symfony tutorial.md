@@ -103,49 +103,73 @@ fith Project : Twig
 
     
 sixth project: twig layout
+
 	1.run following command to create project.
 		symfony new Symtwiglayout
+  
 	2.create controller php bin/console make:controller
 		for the above cmd you will get error bcz need to install another package.
+  
 			composer require symfony/maker-bundle --dev or
 			composer require maker
+   
 	3.to work in twig do the installation of package.
 			composer require twig
+   
 	4.under templates create index.html.twig
+ 
 	5.global variables given in twig.yaml
 
 
 seventhproject: orm with doctrine
+
 how to create database?
  orm - doctrine
 	symfony console - it shows all commands 
 	to create database - symfony console doctrine:database:create
 	if u get error for above cmd run following
 		 composer require symfony/orm-pack
+   
 	- open .env file
 	- update database url:
 	DATABASE_URL="mysql://useradmin:admin123@127.0.0.1:3306/movies?serverVersion=8.0.34&charset=utf8"
 	- now you will get database created successfully.
+ 
 	- to drop - symfony console doctrine:database:drop
+ 
 	symfony console list doctrine - show only doctrine command
+ 
 	- symfony console make:entity to create entity
+ 
 	- you will get error for above one so run follow cmd
+ 
 		composer require symfony/maker-bundle --dev
 
 	- when you cretae entity two files created and one under entity and another in repository.
+ 
 	- give values and name of entity too.
+ 
 	- create two entity - movie,actor
+ 
 	- again create movie entity and add actors property and give ManyToMany while asking datatype and give className
+ 
 	- to prepare migration script - symfony console make:migration
+ 
 	- to push(migrate) in db - symfony console doctrine:migrations:migrate
 
  
 eight project: data fixtures
+
 - data fixtures:
+- 
 	- to load predefined data in database we use this data fixtures.
+ - 
 	- composer require --dev doctrine/doctrine-fixtures-bundle
+ - 
 	now data fixtures folder data will be created.
+
 	-symfony console doctrine:fixtures:load
+
 	- now you will see the datafixtures and use it for u r project use.
 
    
@@ -156,15 +180,22 @@ eight project: data fixtures
  
 10th project: asset
  	- run composer require symfony/webpack-encore-bundle
+  
 	- now asset folder created and within that yiu can see the style files and js files.
+ 
 	- if needed to install - npm install
+ 
 	- to run - npm run dev (only run)
+ 
 	- if needed to start server - npm run watch
+ 
 	- run composer require symfony/asset
+ 
 	- add our style sheet in base.html.twig
 
  
 11.application form
+
 	1.php bin/console make:controller
 
 	2.composer require twig
