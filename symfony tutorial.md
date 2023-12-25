@@ -19,6 +19,7 @@ first project - FstPrjCrUsComposer
 		http://127.0.0.1:8000/hello/javith (output: hello javith)
   
 second project:  - SecPrjCrUsCmd
+
 	1.install symfony cli using scoop
 	2.run following command to create project.
 		symfony new #prjname or
@@ -40,6 +41,7 @@ Third project: - SymControllerandRouter
 	1.run following command to create project.
 		symfony new #prjname or
 		symfony new #prjname --version = 5.7(with version)
+  
 	2.creat controller using 2 ways:
 		1.create normal way by creating files
 		2.create through cmd.	
@@ -49,6 +51,7 @@ Third project: - SymControllerandRouter
 			composer require maker
 		    run the above command so that package will be installed.
 		   when you run php bin/console make:controller  it will ask name then controller will be created.
+     
 	3.start server and go and see the output.
 			routes.yaml not changed 
 
