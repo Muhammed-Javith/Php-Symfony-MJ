@@ -124,14 +124,19 @@ sixth project: twig layout
 seventhproject: orm with doctrine
 
 how to create database?
+
  orm - doctrine
+ 
 	symfony console - it shows all commands 
+ 
 	to create database - symfony console doctrine:database:create
+ 
 	if u get error for above cmd run following
 		 composer require symfony/orm-pack
    
 	- open .env file
 	- update database url:
+ 
 	DATABASE_URL="mysql://useradmin:admin123@127.0.0.1:3306/movies?serverVersion=8.0.34&charset=utf8"
 	- now you will get database created successfully.
  
@@ -160,6 +165,7 @@ how to create database?
  
 eight project: data fixtures
 
+
 - data fixtures:
 - 
 	- to load predefined data in database we use this data fixtures.
@@ -174,11 +180,13 @@ eight project: data fixtures
 
    
 9th project: entity repository
+
 	- see the code
 
 
  
 10th project: asset
+
  	- run composer require symfony/webpack-encore-bundle
   
 	- now asset folder created and within that yiu can see the style files and js files.
@@ -201,6 +209,7 @@ eight project: data fixtures
 	2.composer require twig
 	
 	3.php bin/console make:form
+ 
 composer require symfony/form
 
 		if u get error: composer require form validator orm
