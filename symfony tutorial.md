@@ -38,18 +38,25 @@ second project:  - SecPrjCrUsCmd
 
    
 Third project: - SymControllerandRouter
+
 	1.run following command to create project.
+ 
 		symfony new #prjname or
+  
 		symfony new #prjname --version = 5.7(with version)
   
 	2.creat controller using 2 ways:
 		1.create normal way by creating files
+  
 		2.create through cmd.	
 			php bin/console make:controller
+   
 		   for the above cmd you will get error bcz need to install another package.
 			composer require symfony/maker-bundle --dev or
 			composer require maker
+   
 		    run the above command so that package will be installed.
+      
 		   when you run php bin/console make:controller  it will ask name then controller will be created.
      
 	3.start server and go and see the output.
@@ -58,31 +65,41 @@ Third project: - SymControllerandRouter
 
    
 Fourth project: - SymRouteParam
+
 	1.run following command to create project.
 		symfony new SymRouteParam 
+  
 	2.create controller php bin/console make:controller
+ 
 		for the above cmd you will get error bcz need to install another package.
 			composer require symfony/maker-bundle --dev or
 			composer require maker
+   
 	3.symfony console debug:router will shows router in your project.
 
  
 fith Project : Twig 
+
 	1.run following command to create project.
 		symfony new Symtwig
+  
 	2.create controller php bin/console make:controller
 		for the above cmd you will get error bcz need to install another package.
+  
 			composer require symfony/maker-bundle --dev or
 			composer require maker
+   
 	3.to work in twig do the installation of package.
 			composer require twig
+   
 	4.under templates create index.html.twig
 		twig is kind of language
+  
 		to work html with twig do the following
 			1.file -> preferences ->search settings -> edit in settings.json
 			  -> add the following line:
 				"emmet.includeLanguages": {"twig" : "HTML"},
-		  v 	2.add code and run and check.
+		   	2.add code and run and check.
 
     
 sixth project: twig layout
