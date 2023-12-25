@@ -1,0 +1,12 @@
+# config/routes.yaml
+index:
+    path: /
+    controller: 'App\Controller\HomeController::index'
+
+simple1:
+    path: /hello
+    controller: 'App\Controller\HomeController::simple1'
+
+simple2:
+    path: /hello/{name}
+    controller: 'App\Controller\HomeController::simple2'

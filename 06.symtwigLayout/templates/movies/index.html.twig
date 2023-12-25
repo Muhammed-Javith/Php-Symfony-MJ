@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Hello MoviesController!
+{% endblock %}
+
+{% block body %}
+  {%for flims in flims %}
+   <li>{{flims}}</li>
+    {% endfor %}
+    {{_self}}
+    <br>
+   {{_charset}}
+   <br>
+   {{author}}
+{% endblock %}
